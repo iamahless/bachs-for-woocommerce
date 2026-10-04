@@ -1,0 +1,4 @@
+#bachs-locked-prices .bachs-price-row { display: flex; gap: 8px; align-items: center; }
+#bachs-locked-prices select { min-width: 90px; }
+#bachs-locked-prices input { width: 120px; }
+.bachs-awaiting-confirmation { margin: 1.5em 0; }

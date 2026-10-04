@@ -1,0 +1,404 @@
+# Copyright (C) 2026 Alexander Garuba
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bachs for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bachs-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-04T22:15:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: bachs-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: bachs-for-woocommerce.php
+msgid "Bachs for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: bachs-for-woocommerce.php
+msgid "Hosted Bachs checkout for WooCommerce. Bachs handles payment collection; this plugin never handles card data."
+msgstr ""
+
+#. Author of the plugin
+#: bachs-for-woocommerce.php
+msgid "Alexander Garuba"
+msgstr ""
+
+#. Author URI of the plugin
+#: bachs-for-woocommerce.php
+msgid "https://github.com/iamahless"
+msgstr ""
+
+#: bachs-for-woocommerce.php:48
+msgid "Bachs for WooCommerce requires WooCommerce to be installed and active."
+msgstr ""
+
+#. translators: %s: current WooCommerce currency.
+#: bachs-for-woocommerce.php:81
+#, php-format
+msgid "Bachs for WooCommerce requires a USD-priced store. Your catalog is currently in %s. Change the WooCommerce currency to USD in WooCommerce > Settings > General, then configure this gateway. Prices will need to be re-entered in USD. Bachs only performs currency conversion for USD-priced checkouts; local display prices come from Bachs."
+msgstr ""
+
+#: bachs-for-woocommerce.php:92
+msgid "Bachs for WooCommerce is disabled because no secret key is configured for the active mode."
+msgstr ""
+
+#: includes/class-bachs-api.php:49
+msgid "No Bachs secret key is configured for the active mode."
+msgstr ""
+
+#: includes/class-bachs-api.php:77
+msgid "Unable to reach Bachs. Please try again."
+msgstr ""
+
+#: includes/class-bachs-settings.php:15
+msgid "Locked local prices must be a list of currency and amount pairs."
+msgstr ""
+
+#: includes/class-bachs-settings.php:25
+msgid "Each locked local price must use a supported fiat currency. USD and payment-rail/crypto codes are not allowed."
+msgstr ""
+
+#: includes/class-bachs-settings.php:28
+msgid "Each locked local price currency may only be entered once."
+msgstr ""
+
+#: includes/class-bachs-settings.php:31
+msgid "Each locked local price amount must be a positive decimal amount."
+msgstr ""
+
+#: includes/class-bachs-settings.php:51
+msgid "No Bachs price is available in the selected billing currency."
+msgstr ""
+
+#: includes/class-bachs-settings.php:52
+msgid "No Bachs payment method can charge the selected billing currency."
+msgstr ""
+
+#: includes/class-bachs-settings.php:53
+msgid "The organization does not hold the required base currency for recurring billing."
+msgstr ""
+
+#: includes/class-bachs-settings.php:54
+msgid "The configured base currency cannot be collected."
+msgstr ""
+
+#: includes/class-bachs-settings.php:55
+msgid "The configured base currency is not enabled for this Bachs organization."
+msgstr ""
+
+#: includes/class-bachs-settings.php:56
+msgid "No Bachs FX rate is available for this checkout."
+msgstr ""
+
+#: includes/class-bachs-settings.php:57
+msgid "The Bachs checkout cart contains incompatible currencies."
+msgstr ""
+
+#: includes/class-bachs-settings.php:58
+msgid "Bachs rejected the checkout request as invalid. Review the gateway configuration."
+msgstr ""
+
+#: includes/class-bachs-settings.php:60
+msgid "Bachs could not process the API request. Review the WooCommerce logs."
+msgstr ""
+
+#. translators: %s: Bachs charge ID.
+#: includes/class-bachs-webhook.php:144
+#, php-format
+msgid "Payment confirmed via Bachs. Charge: %s"
+msgstr ""
+
+#. translators: %s: Bachs refund status.
+#: includes/class-bachs-webhook.php:185
+#, php-format
+msgid "Bachs refund update: %s."
+msgstr ""
+
+#. translators: %s: Bachs invoice ID.
+#: includes/class-bachs-webhook.php:328
+#, php-format
+msgid "Bachs recurring invoice paid: %s."
+msgstr ""
+
+#. translators: %s: Bachs invoice ID.
+#: includes/class-bachs-webhook.php:343
+#, php-format
+msgid "Bachs subscription invoice paid: %s."
+msgstr ""
+
+#: includes/class-bachs-webhook.php:395
+#: includes/class-bachs-webhook.php:397
+msgid "Bachs recurring payment failed."
+msgstr ""
+
+#. translators: %s: Bachs subscription status.
+#: includes/class-bachs-webhook.php:459
+#, php-format
+msgid "Bachs subscription status: %s."
+msgstr ""
+
+#: includes/class-bachs-webhook.php:481
+msgid "Unable to create the WooCommerce renewal order."
+msgstr ""
+
+#: includes/class-bachs-webhook.php:561
+msgid "Bachs checkout ID"
+msgstr ""
+
+#: includes/class-bachs-webhook.php:562
+msgid "Bachs charge ID"
+msgstr ""
+
+#: includes/class-bachs-webhook.php:563
+msgid "Bachs amount/currency"
+msgstr ""
+
+#: includes/class-bachs-webhook.php:567
+msgid "Bachs payment"
+msgstr ""
+
+#: includes/class-bachs-webhook.php:575
+msgid "Raw Bachs webhook payload"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:9
+msgid "Bachs"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:10
+msgid "Redirect customers to Bachs hosted checkout. Card details never pass through this store."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:15
+#: includes/class-wc-gateway-bachs.php:37
+msgid "Pay with Bachs"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:29
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:31
+msgid "Enable Bachs hosted checkout"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:35
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:40
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:42
+msgid "You will be redirected to Bachs to complete your payment securely."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:45
+msgid "Test mode"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:47
+msgid "Use Bachs sandbox"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:51
+msgid "Sandbox secret key"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:53
+msgid "Starts with sk_sandbox_. Leave blank to retain the saved key."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:56
+msgid "Live secret key"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:58
+msgid "Starts with sk_live_. Leave blank to retain the saved key."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:61
+msgid "Sandbox webhook secret"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:63
+msgid "Secret for the sandbox webhook destination. Leave blank to retain it."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:66
+msgid "Live webhook secret"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:68
+msgid "Secret for the live webhook destination. Leave blank to retain it."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:71
+msgid "Webhook secret (legacy fallback)"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:73
+msgid "Used only if neither environment-specific secret is configured, and assigned to the active mode. Configure separate sandbox and live secrets before receiving events from both environments."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:76
+msgid "Debug logging"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:78
+msgid "Log Bachs requests and verified webhook payloads (secrets are redacted)."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:82
+#: includes/class-wc-gateway-bachs.php:136
+msgid "Locked local prices"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:84
+msgid "Optional exact local checkout prices. USD is always the base price and cannot be entered here."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:87
+#: includes/class-wc-gateway-bachs.php:151
+msgid "Webhook URL"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:104
+msgid "Gateway disabled: Bachs checkout must be priced in USD. Change WooCommerce currency to USD and re-enter catalog prices in USD; the plugin does not convert prices."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:107
+msgid "Gateway disabled: configure the secret key for the active mode."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:109
+msgid "Open Bachs dashboard (settlement and balance currency settings)"
+msgstr ""
+
+#. translators: %s: required Bachs API key prefix.
+#: includes/class-wc-gateway-bachs.php:126
+#, php-format
+msgid "The key must start with %s."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:140
+msgid "Currency"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:144
+msgid "Remove"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:144
+msgid "Add local price"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:144
+msgid "Supported: NGN, GHS, KES, MWK, RWF, TZS, UGX, XAF, XOF, ZMW. Exact overrides apply on Bachs checkout; other currencies use live FX."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:151
+msgid "Copy"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:151
+msgid "Register this HTTPS URL in each Bachs environment and subscribe to collection.succeeded, refund.created, refund.paid, refund.failed, customer.subscription.created, customer.subscription.updated, customer.subscription.deleted, invoice.paid, and invoice.payment_failed."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:175
+msgid "A Bachs checkout is already being prepared. Please wait a moment and try again."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:191
+#: includes/class-wc-gateway-bachs.php:199
+#: includes/class-wc-gateway-bachs.php:213
+msgid "Payment could not be initiated, please try again."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:218
+msgid "Awaiting Bachs payment confirmation."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:231
+msgid "This order has no Bachs charge. Refund it from the Bachs dashboard if required."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:245
+msgid "Bachs did not return a refund ID. Check the Bachs dashboard before trying again."
+msgstr ""
+
+#. translators: %s: Bachs refund ID.
+#: includes/class-wc-gateway-bachs.php:249
+#, php-format
+msgid "Bachs refund initiated. Refund: %s"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:285
+msgid "Bachs subscriptions require a customer billing email address."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:293
+#: includes/class-wc-gateway-bachs.php:333
+msgid "Unable to determine the WooCommerce subscription for this order."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:329
+msgid "Bachs recurring checkouts require USD pricing."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:338
+msgid "This WooCommerce subscription billing interval is not supported by Bachs."
+msgstr ""
+
+#. translators: %d: WooCommerce subscription ID.
+#: includes/class-wc-gateway-bachs.php:346
+#, php-format
+msgid "WooCommerce subscription #%d"
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:347
+msgid "Managed by Bachs for WooCommerce."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:370
+msgid "Bachs did not return a recurring product ID."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:409
+msgid "Cancelled in WooCommerce."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:411
+msgid "Bachs subscription cancellation could not be synchronized. Review the Bachs dashboard."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:427
+msgid "Awaiting Bachs-managed recurring payment confirmation."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:436
+msgid "Your payment is awaiting confirmation from Bachs. Your order will be updated automatically once confirmed."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:455
+msgid "This Bachs resource has no known environment. Review it in the Bachs dashboard."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:459
+msgid "The Bachs key for this resource's environment is not configured."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:488
+msgid "The order could not be locked for Bachs checkout."
+msgstr ""
+
+#: includes/class-wc-gateway-bachs.php:506
+msgid "A Bachs checkout is already being created for this order."
+msgstr ""
