@@ -7,9 +7,6 @@ use Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodTyp
 final class Bachs_Blocks_Support extends AbstractPaymentMethodType {
 	protected $name = 'bachs';
 
-	/** @var array<string, mixed> */
-	private array $settings = array();
-
 	public function initialize(): void {
 		$this->settings = (array) get_option( 'woocommerce_bachs_settings', array() );
 	}

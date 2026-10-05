@@ -2,7 +2,9 @@
 declare(strict_types=1);
 
 namespace Automattic\WooCommerce\Blocks\Payments\Integrations {
-	abstract class AbstractPaymentMethodType {}
+	abstract class AbstractPaymentMethodType {
+		protected $settings = array();
+	}
 }
 
 namespace {
