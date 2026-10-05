@@ -15,6 +15,8 @@ Secure hosted Bachs checkout for WooCommerce. This plugin never collects or tran
 
 Customers are redirected to Bachs hosted checkout. The browser redirect is never treated as proof of payment: Bachs' signed `collection.succeeded` webhook is the only action that completes the WooCommerce order.
 
+Bachs supports both the classic checkout and WooCommerce's Checkout block.
+
 The store currency must be USD. Bachs only offers customer-local currency conversion for USD-priced checkouts. Do not use this gateway with NGN or another store currency, and do not expect it to convert existing WooCommerce prices. Change WooCommerce > Settings > General > Currency options to USD, then re-enter product prices in USD.
 
 Optional locked local prices let the merchant set exact checkout prices for NGN, GHS, KES, MWK, RWF, TZS, UGX, XAF, XOF, and ZMW. Other customer currencies use Bachs live FX. Settlement and balance currencies are configured in the Bachs dashboard, not by this plugin.

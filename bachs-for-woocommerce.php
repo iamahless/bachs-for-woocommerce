@@ -24,6 +24,7 @@ add_action(
 	'before_woocommerce_init',
 	static function (): void {
 		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', BACHS_WC_FILE, true );
 			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', BACHS_WC_FILE, true );
 		}
 	}
@@ -63,6 +64,23 @@ add_action(
 			static function ( array $gateways ): array {
 				$gateways[] = 'WC_Gateway_Bachs';
 				return $gateways;
+			}
+		);
+	}
+);
+
+add_action(
+	'woocommerce_blocks_loaded',
+	static function (): void {
+		if ( ! class_exists( '\Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType' ) ) {
+			return;
+		}
+
+		require_once BACHS_WC_DIR . 'includes/class-bachs-blocks-support.php';
+		add_action(
+			'woocommerce_blocks_payment_method_type_registration',
+			static function ( $payment_method_registry ): void {
+				$payment_method_registry->register( new Bachs_Blocks_Support() );
 			}
 		);
 	}

@@ -54,6 +54,8 @@ The plugin does not convert product prices automatically. It remains unavailable
 7. Save that destination's signing secret in the matching sandbox or live webhook-secret field.
 8. Run a sandbox payment before accepting live payments.
 
+Bachs supports both the classic checkout and WooCommerce's Checkout block.
+
 ## Webhook configuration
 
 Use the stable endpoint displayed in the gateway settings, normally:
